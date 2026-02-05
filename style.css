@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-foreground: #08090a;
+    --primary-background: #ffffff;
+    --secondary-color: #ff9800;
+    --color-background-main: lab(100% 0 0);
+    --color-background-header: lab(100% 0 0 / 80%);
+    --color-background-invert: lab(2.42579% -.165291 -.470081);
+    --color-text-main: lab(2.42579% -.165291 -.470081);
+    --color-text-invert: lab(100% 0 0);
+    --color-text-soft: lab(2.42579% -.165291 -.470081 / .8);
+    --color-text-sub: lab(2.42579% -.165291 -.470081 / .6);
+    --color-muted: lab(2.42579% -.165291 -.470081 / .5);
+    --color-border-sub: lab(2.42579% -.165291 -.470081 / .07);
+    --color-background-soft: lab(2.42579% -.165291 -.470081 / .03);
+    --color-border-surface: lab(2.42579% -.165291 -.470081 / .05);
+    --color-border-soft: lab(2.42579% -.165291 -.470081 / .15);
+    --color-brand: lab(51.3415% -41.5657 15.3527);
+    --color-brand-light: lab(51.3415% -41.5657 15.3527);
+    --color-border-solid: lab(2.42579% -.165291 -.470081);
+    --color-muted-invert: lab(100% 0 0 / .5);
+    --blur-lg: 16px;
+    --blur-md: 12px;
+    --font-inter: 'Inter', 'Hubot-Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+}
+
+body {
+    background-color: var(--primary-background);
+    color: var(--primary-foreground);
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    padding: 16px 24px;
+    z-index: 50;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(var(--blur-lg));
+}
+
+.header-container {
+    max-width: 1056px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    column-gap: 168px;
+}
+
+.header-content span {
+    padding-top: 4px;
+}
+
+.wordmark {
+    width: 104px;
+    border-radius: 4px;
+}
+
+.header-content nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.header-content nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    gap: 4px;
+    flex: 1;
+}
+
+.header-content nav ul li {
+    color: var(--color-text-main);
+    height: 32px;
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    border-radius: 38px;
+    padding: 4px 12px;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 500;
+
+}
+
+.header-actions {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-actions a {
+    text-decoration: none;
+}
+
+.contact-btn {
+    color: var(--color-text-main);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    height: 32px;
+    font-size: 15px;
+    padding: 4.5px 12px;
+    background-color: var(--color-background-soft);
+    border: 1px solid transparent;
+    border-radius: 38px;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.start-btn {
+    display: inline-flex;
+    flex-shrink: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    gap: 6px;
+    border-radius: 38px;
+    border: 1px solid var(--color-text-main);
+    padding: 4.5px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-invert);
+    background-color: var(--color-background-invert);
+}
