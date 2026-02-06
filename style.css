@@ -78,6 +78,9 @@ a {
 .wordmark {
     width: 104px;
     border-radius: 4px;
+    animation: logo-swap linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 500px;
 }
 
 .header-content nav {
@@ -98,6 +101,9 @@ a {
 
 .header-content nav ul li {
     color: var(--color-text-invert);
+    animation: change-color linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 500px;
     height: 32px;
     display: inline-flex;
     width: max-content;
@@ -125,6 +131,9 @@ a {
 
 .contact-btn {
     color: var(--color-text-invert);
+    animation: change-soft-color linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 500px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +162,9 @@ a {
     font-size: 15px;
     font-weight: 500;
     color: var(--color-text-main);
+    animation: change-btn-color linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 500px;
     background-color: var(--color-background-main);
 }
 
@@ -307,6 +319,7 @@ a {
 .hero-image-section {
     max-width: 1080px;
     position: relative;
+    margin-inline: 16px;
     margin: 0 auto;
 }
 
@@ -315,7 +328,7 @@ a {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     border: 3px solid var(--color-background-soft);
-
+    border-bottom: 0 solid !important;
 }
 
 .hero-image {
@@ -324,4 +337,97 @@ a {
     height: auto;
     color: transparent;
     background-color: var(--color-background-main);
+}
+
+.company-section {
+    padding: 72px 32px 144px 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1024px;
+    gap: 8px;
+    row-gap: 28px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.company-item {
+    width: auto;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coinbase {
+    transform: scale(90%);
+    height: 45px;
+}
+
+#paypal {
+    transform: scale(170%);
+    height: 66px;
+}
+
+@keyframes change-color {
+
+    0%,
+    99% {
+        color: var(--color-text-invert);
+    }
+
+    100% {
+        color: var(--color-text-main);
+    }
+}
+
+@keyframes change-soft-color {
+
+    0%,
+    99% {
+        background-color: var(--color-background-soft-light);
+        color: var(--color-text-invert);
+    }
+
+    100% {
+        background-color: lab(2.42579% -.165291 -.470081/.03);
+        color: var(--color-text-main);
+    }
+}
+
+@keyframes change-btn-color {
+
+    0%,
+    99% {
+        background-color: var(--color-background-main);
+        color: var(--color-text-main);
+        border: 1px solid var(--color-text-invert);
+    }
+
+    100% {
+        background-color: var(--color-background-invert);
+        color: var(--color-text-invert);
+        border: 1px solid var(--color-text-main);
+    }
+
+}
+
+@keyframes logo-swap {
+
+    0%,
+    99% {
+        filter: invert(0) brightness(1); 
+    }
+
+    100% {
+        filter: invert(1) hue-rotate(180deg) brightness(1);
+    }
 }
