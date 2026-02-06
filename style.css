@@ -981,3 +981,127 @@ a {
     flex-shrink: 0;
     color: var(--color-text-main);
 }
+
+.cta-arrow-svg {
+    display: block;
+    height: 10px;
+    width: 10px;
+    flex-shrink: 0;
+    rotate: -90deg;
+}
+
+.cta-section {
+    position: relative;
+    width: 100%;
+    padding-inline: 24px;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.cta-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    max-width: 988px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+
+.cta-container h3 {
+    text-wrap: balance;
+    max-width: 560px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    color: var(--color-text-main);
+}
+
+.cta-container p {
+    margin-top: 16px;
+    max-width: 560px;
+    text-align: center;
+    line-height: 24px;
+    text-wrap: balance;
+    color: var(--color-text-main);
+}
+
+.cta-links {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta-links a {
+    text-decoration: inherit;
+    display: inline-flex;
+    height: fit-content;
+    flex-shrink: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 38px;
+    padding-inline: 24px;
+    padding-top: .4375rem;
+    padding-bottom: .4375rem;
+    line-height: 24px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cta-dark {
+    color: var(--color-text-invert);
+    border: 1px solid var(--color-text-main);
+    background-color: var(--color-background-invert);
+
+
+}
+
+.cta-light {
+    color: var(--color-text-main);
+    border: 1px solid var(--color-border-soft);
+    background-color: var(--color-background-main);
+}
+
+.cta-cards {
+    margin-top: 56px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cta-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    border-right: 1px solid var(--color-border-surface);
+}
+
+.cta-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:16px;
+    border: 0.5px solid var(--color-border-soft);
+    background-color: var(--color-background-main);
+    padding: 10px;
+    box-shadow: 0px 2px 4px 0px var(--color-background-soft);
+}
+
+.cta-svg svg {
+    display: block;
+    height: 32px;
+    width: 32px;
+    color: var(--color-brand);
+    flex-shrink: 0;
+}
+
