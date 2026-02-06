@@ -289,7 +289,7 @@ a {
 }
 
 .hero-input:focus {
-    outline: none;
+    outline-style: none;
 }
 
 .hero-input::placeholder {
@@ -567,3 +567,249 @@ a {
     height: 100%;
     width: 100%;
 }
+
+.enterprise-section {
+    width: 100%;
+    background-color: var(--color-background-soft);
+    padding: 96px 0;
+}
+
+.enterprise-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.enterprise-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 640px;
+}
+
+.enterprise-intro h1 {
+    font-size: 40px;
+    letter-spacing: -0.8px;
+    font-weight: 600;
+    color: var(--color-text-main);
+    line-height: 44px;
+    text-align: left;
+    text-wrap: balance;
+}
+
+.enterprise-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 48px;
+}
+
+.enterprise-heading a {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px;
+    border-radius: 38px;
+    border: 1px solid var(--color-text-invert);
+    color: var(--color-text-invert);
+    background-color: var(--color-text-main);
+    padding: 7px 24px;
+    margin-top: auto;
+    margin-right: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px 0 var(--color-background-soft);
+}
+
+.enterprise-content {
+    display: flex;
+    gap: 48px;
+    margin: 24px 0;
+    padding-bottom: 48px;
+}
+
+.enter-logo {
+    color: var(--color-brand);
+    width: 32px;
+    height: 32px;
+}
+
+.enterprise-card h4 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: var(--color-text-main);
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    font-weight: 600;
+}
+
+.enterprise-card p {
+    text-wrap: pretty;
+}
+
+.story-logos {
+    position: relative;
+    margin-inline: -24px;
+    padding-block: 12px;
+}
+
+.story-scroll {
+    position: relative;
+    overflow-x: auto;
+    scrollbar-width: none; 
+}
+
+.story-flex {
+    display: flex;
+    width: max-content;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding-inline: 24px;
+}
+
+.story-flex button {
+    cursor: pointer;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 140px;
+    border: 0 solid;
+    outline-style: none;
+    background-color: transparent;
+    opacity: 1;
+    color: inherit;
+    letter-spacing: inherit;
+    font: inherit;
+    flex-shrink: 0;
+}
+
+.enterprise-story {
+    width: 100%;
+    overflow: hidden;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.story {
+    position: relative;
+    display: flex;
+    margin-inline: auto;
+    height: 518px;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 24px;
+    background: var(--color-background-main);
+    padding: 64px;
+}
+
+.anthropic-img {
+    display: block;
+    max-width: 100%;
+    scale: 1.15;
+    background-color: color-mix(in oklab,var(--color-text-main)20%,transparent);
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+    backface-visibility: hidden;
+}
+
+.story-p{
+    text-transform: uppercase;
+    position: relative;
+    text-wrap: pretty;
+    z-index: 10;
+    font-family: 'geist mono', monospace , sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: var(--primary-background);
+}
+
+.story h3 {
+    color: var(--primary-background);
+    position: relative;
+    text-wrap: balance;
+    z-index: 10;
+    margin-top: 16px;
+    max-width: 448px;
+    font-size: 24px;
+    line-height: 1.33;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+
+}
+
+.story-link {
+    margin-top: 32px;
+    z-index: 10;
+    color: var(--primary-background);
+    width: fit-content;
+
+}
+
+.story-link span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: 500;
+
+}
+
+.story-data {
+    margin-top: auto;
+    display: flex;
+    align-items: start;
+    gap: 28px;
+    position: relative;
+    z-index: 10;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 192px;
+}
+
+.story-p2 {
+    color: color-mix(in oklab, var(--primary-background) 80%, transparent);
+    font-size: 14px;
+    line-height: 24px;
+    text-wrap: balance;
+}
+
+.story-h4 {
+    color: var(--primary-background);
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+    text-wrap: pretty;
+}
+
